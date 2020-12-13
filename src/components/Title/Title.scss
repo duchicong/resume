@@ -1,0 +1,18 @@
+@import '../../assets/styles/variables';
+
+.Title {
+  position: relative;
+  margin-left: 14px;
+  color: $white;
+
+  &::before {
+    background: transparent url('/icons/dots-bg-light.svg') no-repeat center center;
+    content: '';
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    left: -14px;
+    top: -14px;
+    display: block;
+  }
+}

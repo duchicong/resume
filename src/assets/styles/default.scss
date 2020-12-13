@@ -1,0 +1,134 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto-Medium', -apple-system, BlinkMacSystemFont, 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.heading--1 {
+  font-family: 'Roboto-Black', -apple-system, BlinkMacSystemFont, 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.text__right {
+  text-align: right;
+}
+
+.text {
+  &--bold {
+    @include Roboto-Black;
+  }
+  &--center {
+    text-align: center;
+  }
+  &--right {
+    text-align: right;
+  }
+  &--center {
+    text-align: center;
+  }
+  &--capitalize {
+    text-transform: capitalize;
+  }
+}
+
+.font__size--22 {
+  font-size: 22px;
+}
+
+.font__size--19 {
+  font-size: 19px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flex {
+  display: flex;
+
+  &-grow--1 {
+    flex-grow: 1;
+  }
+  &--start {
+    align-items: start;
+  }
+  &--end {
+    align-items: end;
+  }
+  &--column {
+    flex-direction: column;
+  }
+}
+
+.padding--30 {
+  padding: 30px;
+}
+
+.triangle-left-md {
+  background-color: $very-dark-desaturated-blue;
+  color: $white;
+  border-radius: 20px;
+  position: relative;
+}
+
+.full--width {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .text__md__left {
+    text-align: left;
+  }
+}
+
+// devices xs max-width: 600px
+@media (max-width: 600px) {
+  .font__size-xs--19 {
+    font-size: 19px !important;
+  }
+}

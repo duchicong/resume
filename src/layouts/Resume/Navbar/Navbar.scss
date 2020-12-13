@@ -1,0 +1,39 @@
+@import '../../../assets/styles/variables';
+
+.NavBar,
+.NavBar__mobile {
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  background-color: $veryDarkDesaturatedBlue;
+  color: $white;
+  z-index: 999;
+
+  .Nav-wrapper {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-right: 3px solid $softOrange;
+  }
+}
+
+.NavBar__mobile {
+  transform: translateX(0);
+  transition: all 0.3s ease-in-out;
+  top: 0;
+  float: none !important;
+  -webkit-transform: translateX(-380px);
+  -moz-transform: translateX(-380px);
+  -ms-transform: translateX(-380px);
+  -o-transform: translateX(-380px);
+  transform: translateX(-380px);
+
+  &__activited {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

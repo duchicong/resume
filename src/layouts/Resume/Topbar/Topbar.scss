@@ -1,0 +1,69 @@
+@import '../../../assets/styles/variables';
+
+.Topbar-Mobile {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  &.push {
+    -webkit-transform: translateX(180px);
+    -moz-transform: translateX(180px);
+    -ms-transform: translateX(180px);
+    -o-transform: translateX(180px);
+    transform: translateX(180px);
+  }
+}
+
+.Topbar-Mobile {
+  height: 60px;
+  width: 100%;
+  top: 12px;
+  position: fixed;
+  box-sizing: border-box;
+  z-index: 998;
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+
+    .content {
+      margin: 0 12px;
+      height: 100%;
+      color: $white;
+      border-radius: 12px;
+      background-color: $moderateRed;
+
+      &--item {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 12px;
+
+        .btn--Navbar {
+          background-color: $white;
+          color: $moderateRed;
+          box-shadow: none;
+        }
+
+        .infomation {
+          display: flex;
+          align-items: center;
+
+          .my-picture {
+            height: 36px;
+            width: auto;
+            border-radius: 100%;
+          }
+
+          .item {
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+  }
+}
