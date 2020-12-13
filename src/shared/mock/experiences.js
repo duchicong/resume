@@ -34,16 +34,6 @@ mock.onGet('/api/experiences').reply(200, {
     },
     {
       key: 3,
-      timeline: '2016 - 2018',
-      title: 'Join the army',
-      content: 'Complete military service',
-      timelineDot: {
-        color: 'inherit',
-        variant: 'outlined',
-      },
-    },
-    {
-      key: 4,
       timeline: '2015 - 2016',
       title: 'Vinamax VietNam Company',
       content: 'Fullstack Web Developer with NukeViet',
@@ -53,7 +43,7 @@ mock.onGet('/api/experiences').reply(200, {
       },
     },
     {
-      key: 5,
+      key: 4,
       timeline: '2012 - 2015',
       title: 'HaNoi Institute of Technology',
       content: "Get a good bachelor's degree",

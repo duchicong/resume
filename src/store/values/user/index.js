@@ -20,7 +20,7 @@ export default {
   picture: 'images/me.jpg',
   cover: '',
   follows: [
-    {id: 1, icon: GitHubIcon, url: 'https://github.com/Iamcong'},
+    {id: 1, icon: GitHubIcon, url: 'https://github.com/duchicong'},
     {id: 2, icon: FacebookIcon, url: 'https://facebook.com/duchicong'},
   ],
   positions: [
