@@ -16,7 +16,7 @@ export const Navbar = () => {
   )
 }
 
-export const NavbarMobile = ({open, onClose}) => {
+export const NavbarMobile = React.memo(({open, onClose}) => {
   if (!open) return null
   return (
     <div className={clsx('NavBar__mobile', {NavBar__mobile__activited: open})}>
@@ -30,7 +30,7 @@ export const NavbarMobile = ({open, onClose}) => {
       </div>
     </div>
   )
-}
+})
 
 NavbarMobile.propTypes = {
   open: PropTypes.bool.isRequired,

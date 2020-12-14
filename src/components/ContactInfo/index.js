@@ -22,4 +22,4 @@ ContactInfo.propTypes = {
   info: PropTypes.object,
 }
 
-export default ContactInfo
+export default React.memo(ContactInfo)

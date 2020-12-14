@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useCallback, useEffect, useState} from 'react'
 import clsx from 'clsx'
 import PropTypes from 'prop-types'
 import {makeStyles} from '@material-ui/core/styles'
@@ -7,6 +7,8 @@ import {Title, Space} from '../../components'
 import Post from './Post'
 import DialogPost from './DialogPost'
 import axios from '../../utils/axios'
+
+React.memo(Container)
 
 function TabPanel(props) {
   const {children, value, index, ...other} = props
@@ -60,27 +62,36 @@ export default function RecentWork() {
   })
   const [projects, setProjects] = useState()
 
-  const handleChange = (event, value) => {
-    setState({
-      ...state,
-      value,
+  const handleChange = useCallback((event, value) => {
+    setState((prevState) => {
+      return {
+        ...prevState,
+        value,
+      }
     })
-  }
+  }, [])
 
-  const onOpenHandler = (newState) => () => {
-    setState({
-      ...state,
-      ...newState,
-      open: true,
-    })
-  }
+  const onOpenHandler = useCallback(
+    (newState) => () => {
+      setState((prevState) => {
+        return {
+          ...prevState,
+          ...newState,
+          open: true,
+        }
+      })
+    },
+    []
+  )
 
-  const onCloseHandler = () => {
-    setState({
-      ...state,
-      open: false,
+  const onCloseHandler = useCallback(() => {
+    setState((prevState) => {
+      return {
+        ...prevState,
+        open: false,
+      }
     })
-  }
+  }, [])
 
   useEffect(() => {
     let mounted = true

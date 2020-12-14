@@ -36,4 +36,4 @@ ProgressSkills.propTypes = {
   progress: PropTypes.object,
 }
 
-export default ProgressSkills
+export default React.memo(ProgressSkills)
