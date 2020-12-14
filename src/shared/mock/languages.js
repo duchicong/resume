@@ -43,6 +43,16 @@ mock.onGet('/api/languages').reply(200, {
       },
     },
     {
+      language: 'React',
+      progress: {
+        value: 80,
+        variant: 'determinate',
+        classes: {
+          bar: 'bg--moderateRed',
+        },
+      },
+    },
+    {
       language: 'Markdown',
       progress: {
         value: 80,
