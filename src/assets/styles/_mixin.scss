@@ -1,39 +1,39 @@
 @import './variables';
 
-$font: -apple-system, BlinkMacSystemFont, 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+$font: -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+  'Helvetica Neue', sans-serif;
 @mixin more-font {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 @mixin Roboto-Medium {
-  font-family: 'Roboto-Medium', $font;
+  font-family: 'Roboto', $font; // Roboto-Medium
   @include more-font;
+  font-weight: 500;
 }
 
 @mixin Roboto-Black {
-  font-family: 'Roboto-Black', $font !important;
+  font-family: 'Roboto', $font !important; // Roboto-Black
   @include more-font;
+  font-weight: 900;
 }
 
 @mixin Roboto-Bold {
-  font-family: 'Roboto-Bold', $font;
+  font-family: 'Roboto', $font; // Roboto-Bold
   @include more-font;
+  font-weight: 700;
 }
 
 @mixin Roboto-Light {
-  font-family: 'Roboto-Light', $font;
+  font-family: 'Roboto', $font; // Roboto-Light
   @include more-font;
-}
-
-@mixin Roboto-Regular {
-  font-family: 'Roboto-Regular', $font;
-  @include more-font;
+  font-weight: 300;
 }
 
 @mixin Roboto-Thin {
-  font-family: 'Roboto-Thin', $font;
+  font-family: 'Roboto', $font; // Roboto-Thin
   @include more-font;
+  font-weight: 100;
 }
 
 // Defind magrin and padding
