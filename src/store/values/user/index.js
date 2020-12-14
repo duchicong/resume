@@ -57,7 +57,7 @@ export default {
   habits: [
     {
       icon: MenuBookIcon,
-      title: 'Read Books',
+      title: 'Books',
     },
     {
       icon: MusicNoteIcon,
@@ -69,7 +69,7 @@ export default {
     },
     {
       icon: FavoriteIcon,
-      title: 'Blood Donation',
+      title: 'Volunteer',
     },
   ],
 }

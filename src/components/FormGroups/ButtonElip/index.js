@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {withStyles} from '@material-ui/core/styles'
 import Button from '@material-ui/core/Button'
-import {blueGrey} from '@material-ui/core/colors'
+import {blueGrey, pink} from '@material-ui/core/colors'
 
-const CssButton = withStyles((theme) => ({
+const CssButton = withStyles(() => ({
   root: {
     borderRadius: '45px',
     height: '45px',
@@ -14,7 +14,10 @@ const CssButton = withStyles((theme) => ({
     minWidth: 200,
 
     '&:hover': {
-      backgroundColor: blueGrey[800],
+      backgroundColor: pink[500],
+    },
+    '&.Mui-disabled': {
+      backgroundColor: blueGrey[600],
     },
   },
 }))(Button)

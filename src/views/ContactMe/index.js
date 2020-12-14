@@ -254,9 +254,9 @@ const ContactMe = () => {
                 <div className="Contact__form--button">
                   <ButtonElip
                     option={{
-                      color: 'primary',
+                      color: 'default',
                       onClick: sendEmail,
-                      classes: {root: checkDisabled() ? '' : 'bg--white color--veryDarkDesaturatedBlue'},
+                      classes: {root: checkDisabled() ? '' : 'color--white'},
                       disabled: checkDisabled(),
                     }}
                   >
