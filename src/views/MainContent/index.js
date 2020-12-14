@@ -1,22 +1,24 @@
-import React from 'react'
+import React, {Suspense} from 'react'
 import {Page} from '../../components'
-import HeaderMain from '../HeaderMain'
-import AboutMe from '../AboutMe'
-import Experience from '../Experience'
-import ContactMe from '../ContactMe'
-import RecentWork from '../RecentWork'
 import './MainContent.scss'
+const HeaderMain = React.lazy(() => import('../HeaderMain'))
+const AboutMe = React.lazy(() => import('../AboutMe'))
+const Experience = React.lazy(() => import('../Experience'))
+const ContactMe = React.lazy(() => import('../ContactMe'))
+const RecentWork = React.lazy(() => import('../RecentWork'))
 
 const Content = () => {
   return (
     <Page title="Du Cong Resume">
-      <div className="Main-Content">
-        <HeaderMain />
-        <AboutMe />
-        <Experience />
-        <RecentWork />
-        <ContactMe />
-      </div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <div className="Main-Content">
+          <HeaderMain />
+          <AboutMe />
+          <Experience />
+          <RecentWork />
+          <ContactMe />
+        </div>
+      </Suspense>
     </Page>
   )
 }
