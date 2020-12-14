@@ -62,4 +62,4 @@ Topbar.propTypes = {
   onClick: PropTypes.func,
 }
 
-export default Topbar
+export default React.memo(Topbar)
