@@ -39,4 +39,4 @@ InputElip.propTypes = {
   option: PropTypes.object,
 }
 
-export default InputElip
+export default React.memo(InputElip)

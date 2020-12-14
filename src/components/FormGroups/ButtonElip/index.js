@@ -28,4 +28,4 @@ ButtonElip.propTypes = {
   children: PropTypes.node,
 }
 
-export default ButtonElip
+export default React.memo(ButtonElip)

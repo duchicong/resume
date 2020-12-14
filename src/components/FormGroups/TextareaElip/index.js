@@ -14,4 +14,4 @@ TextareaElip.propTypes = {
   option: PropTypes.object,
 }
 
-export default TextareaElip
+export default React.memo(TextareaElip)

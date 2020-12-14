@@ -79,4 +79,4 @@ DialogSizes.propTypes = {
   actionProps: PropTypes.node,
 }
 
-export default DialogSizes
+export default React.memo(DialogSizes)

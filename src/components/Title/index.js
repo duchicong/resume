@@ -11,4 +11,4 @@ Title.propTypes = {
   className: PropTypes.string,
 }
 
-export default Title
+export default React.memo(Title)

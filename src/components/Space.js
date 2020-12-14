@@ -10,4 +10,4 @@ Space.propTypes = {
   height: PropTypes.number,
 }
 
-export default Space
+export default React.memo(Space)
