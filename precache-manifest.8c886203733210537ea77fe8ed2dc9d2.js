@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4185445f40432e0a7c78904cba6884ac",
+    "revision": "418cbf3aef2ced39397c41ccec859ddc",
     "url": "/index.html"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/7.45f0c330.chunk.css"
   },
   {
-    "revision": "bc5dbe1230a6b77ca77e",
-    "url": "/static/css/8.12a59074.chunk.css"
+    "revision": "bd75dad89400f6868262",
+    "url": "/static/css/8.83492416.chunk.css"
   },
   {
     "revision": "1b7bc6572fb7084b8f66",
     "url": "/static/css/9.b5e5e939.chunk.css"
   },
   {
-    "revision": "025d9cfff7e871a55343",
-    "url": "/static/css/main.1c8e3361.chunk.css"
+    "revision": "43dc960c46651ec116d6",
+    "url": "/static/css/main.73c13da4.chunk.css"
   },
   {
     "revision": "e2a5b38186c8d220ca29",
@@ -64,7 +64,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/7.15a14ad2.chunk.js"
   },
   {
-    "revision": "bc5dbe1230a6b77ca77e",
+    "revision": "bd75dad89400f6868262",
     "url": "/static/js/8.e09bede8.chunk.js"
   },
   {
@@ -72,35 +72,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/9.a6e9f807.chunk.js"
   },
   {
-    "revision": "025d9cfff7e871a55343",
+    "revision": "43dc960c46651ec116d6",
     "url": "/static/js/main.7879fe42.chunk.js"
   },
   {
-    "revision": "43c2c3a7709e8682caa8",
-    "url": "/static/js/runtime-main.73fd3ac6.js"
-  },
-  {
-    "revision": "5ebb24ee1112dd9562629375c387879a",
-    "url": "/static/media/Roboto-Black.5ebb24ee.ttf"
-  },
-  {
-    "revision": "e07df86cef2e721115583d61d1fb68a6",
-    "url": "/static/media/Roboto-Bold.e07df86c.ttf"
-  },
-  {
-    "revision": "88823c2015ffd5fa89d567e17297a137",
-    "url": "/static/media/Roboto-Light.88823c20.ttf"
-  },
-  {
-    "revision": "58aef543c97bbaf6a9896e8484456d98",
-    "url": "/static/media/Roboto-Medium.58aef543.ttf"
-  },
-  {
-    "revision": "11eabca2251325cfc5589c9c6fb57b46",
-    "url": "/static/media/Roboto-Regular.11eabca2.ttf"
-  },
-  {
-    "revision": "321de678e592d0b8f44f1a82d7ca4b62",
-    "url": "/static/media/Roboto-Thin.321de678.ttf"
+    "revision": "c3eff45d143a650b0b20",
+    "url": "/static/js/runtime-main.b17efb7d.js"
   }
 ]);
