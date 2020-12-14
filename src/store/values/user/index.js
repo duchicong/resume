@@ -12,7 +12,7 @@ import SettingsSystemDaydreamIcon from '@material-ui/icons/SettingsSystemDaydrea
 
 export default {
   author: 'Du Cong',
-  email: 'Duconggpdg@gmail.com',
+  email: 'duconggpdg@gmail.com',
   description:
     "I'm Cong, I live in Hanoi, have 2 years of experience with projects outside of Japan, like writing web apps, open-source and web platforms. Right now I'm Frontend Developer but my target is Full-stack with javascript (reactjs, vuejs).",
   phone: '0399557228',
