@@ -8,7 +8,8 @@ mock.onGet('/api/projects').reply(200, {
       title: 'Project Management Laws Documents',
       image: '/images/recent-works/laws.jpg',
       body:
-        'Fooder is a travel project that allows users to find and choose dishes that suit each taste, ensuring food safety factor for tourists coming to Japan. The project allows to link the chain of managed stores directly on the map, the user can choose, then it will direct customers to the store.',
+        'Laws is a law project that aims to administer documents and documents for lawyers before and after going to court.',
+
       technical: 'Project using Laravel, Nuxtjs and AWS.',
       due_date: '3 months',
       positions: ['Backend', 'Front-end'],
@@ -32,7 +33,7 @@ mock.onGet('/api/projects').reply(200, {
       title: 'Project Management Foods',
       image: '/images/recent-works/foods.jpg',
       body:
-        'Laws is a law project that aims to administer documents and documents for lawyers before and after going to court.',
+        'Fooder is a travel project that allows users to find and choose dishes that suit each taste, ensuring food safety factor for tourists coming to Japan. The project allows to link the chain of managed stores directly on the map, the user can choose, then it will direct customers to the store.',
       technical: 'Project using Laravel, Reactjs and AWS, Rest API Google Maps.',
       due_date: '1 year',
       positions: ['Front-end'],
