@@ -96,7 +96,7 @@ const AboutMe = () => {
                 }}
                 color="inherit"
                 variant="contained"
-                href="/docs/DuChiCongResume.pdf"
+                href="/docs/Du-Chi-Cong-resume.pdf"
                 target="_blank"
                 rel="noopener"
                 startIcon={<GetAppIcon />}
