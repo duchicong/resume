@@ -3,7 +3,7 @@ import mock from '../../utils/mock'
 mock.onGet('/api/experiences').reply(200, {
   data: [
     {
-      key: 0,
+      key: 5,
       timeline: '',
       title: '',
       content: '',
@@ -13,8 +13,18 @@ mock.onGet('/api/experiences').reply(200, {
       },
     },
     {
-      key: 1,
-      timeline: '2019 - Present',
+      key: 4,
+      timeline: '2021 - present',
+      title: 'Ominext Group',
+      content: 'Full stack Developer (UNIT test, Nodejs)',
+      timelineDot: {
+        color: 'inherit',
+        variant: 'outlined',
+      },
+    },
+    {
+      key: 3,
+      timeline: '2019 - 2021',
       title: 'Connectiv Company',
       content: 'Web Developer Frontend use (React)',
       timelineDot: {
@@ -33,7 +43,7 @@ mock.onGet('/api/experiences').reply(200, {
       },
     },
     {
-      key: 3,
+      key: 1,
       timeline: '2015 - 2016',
       title: 'Vinamax VietNam Company',
       content: 'Fullstack Web Developer with NukeViet',
@@ -43,7 +53,7 @@ mock.onGet('/api/experiences').reply(200, {
       },
     },
     {
-      key: 4,
+      key: 0,
       timeline: '2012 - 2015',
       title: 'HaNoi Institute of Technology',
       content: "Get a good bachelor's degree",

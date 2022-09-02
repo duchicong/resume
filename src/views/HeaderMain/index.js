@@ -1,9 +1,7 @@
 import React, {useContext, useState} from 'react'
-import Particles from 'react-particles-js'
 import {Link, Button} from '@material-ui/core'
 import LayoutContext from '../../store/providers/resume'
 import './HeaderMain.scss'
-import configureParticles from './configureParticles'
 
 const HeaderMain = () => {
   const context = useContext(LayoutContext)
@@ -45,7 +43,6 @@ const HeaderMain = () => {
   return (
     <div id="Header-main" className="Header-main">
       <div className="Header-main__content">
-        <Particles params={configureParticles} className="Header-main__Particles" />
         <div className="infomation">
           <img src={user.picture} alt={user.name} className="my-picture" />
           <div className="Author Roboto-Black text--center font__size--22">{user.author}</div>
