@@ -3,9 +3,19 @@ import mock from '../../utils/mock'
 mock.onGet('/api/languages').reply(200, {
   data: [
     {
+      language: 'Typescript',
+      progress: {
+        value: 90,
+        variant: 'determinate',
+        classes: {
+          bar: 'bg--moderateRed',
+        },
+      },
+    },
+    {
       language: 'Javascript',
       progress: {
-        value: 80,
+        value: 90,
         variant: 'determinate',
         classes: {
           bar: 'bg--moderateRed',
@@ -15,7 +25,7 @@ mock.onGet('/api/languages').reply(200, {
     {
       language: 'PHP',
       progress: {
-        value: 40,
+        value: 20,
         variant: 'determinate',
         classes: {
           bar: 'bg--softOrange',
@@ -25,7 +35,7 @@ mock.onGet('/api/languages').reply(200, {
     {
       language: 'CSS/SCSS',
       progress: {
-        value: 80,
+        value: 90,
         variant: 'determinate',
         classes: {
           bar: 'bg--moderateRed',
@@ -35,7 +45,7 @@ mock.onGet('/api/languages').reply(200, {
     {
       language: 'Vue/Nuxt',
       progress: {
-        value: 60,
+        value: 40,
         variant: 'determinate',
         classes: {
           bar: 'bg--softOrange',
@@ -55,7 +65,7 @@ mock.onGet('/api/languages').reply(200, {
     {
       language: 'Markdown',
       progress: {
-        value: 80,
+        value: 100,
         variant: 'determinate',
         classes: {
           bar: 'bg--moderateRed',
@@ -65,20 +75,10 @@ mock.onGet('/api/languages').reply(200, {
     {
       language: 'HTML',
       progress: {
-        value: 80,
+        value: 100,
         variant: 'determinate',
         classes: {
-          bar: 'bg--softOrange',
-        },
-      },
-    },
-    {
-      language: 'Typescript',
-      progress: {
-        value: 50,
-        variant: 'determinate',
-        classes: {
-          bar: 'bg--softOrange',
+          bar: 'bg--moderateRed',
         },
       },
     },
@@ -93,9 +93,19 @@ mock.onGet('/api/languages').reply(200, {
       },
     },
     {
+      language: 'Jekyll',
+      progress: {
+        value: 60,
+        variant: 'determinate',
+        classes: {
+          bar: 'bg--softOrange',
+        },
+      },
+    },
+    {
       language: 'Other...',
       progress: {
-        value: 50,
+        value: 30,
         variant: 'determinate',
         classes: {
           bar: 'bg--softOrange',

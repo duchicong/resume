@@ -1,5 +1,6 @@
 import FacebookIcon from '@material-ui/icons/Facebook'
 import GitHubIcon from '@material-ui/icons/GitHub'
+import BookIcon from '@material-ui/icons/Book'
 import MenuBookIcon from '@material-ui/icons/MenuBook'
 import MusicNoteIcon from '@material-ui/icons/MusicNote'
 import SportsEsportsIcon from '@material-ui/icons/SportsEsports'
@@ -21,7 +22,8 @@ export default {
   cover: '',
   follows: [
     {id: 1, icon: GitHubIcon, url: 'https://github.com/duchicong'},
-    {id: 2, icon: FacebookIcon, url: 'https://facebook.com/duchicong'},
+    {id: 2, icon: BookIcon, url: 'https://duchicong.github.io'},
+    {id: 3, icon: FacebookIcon, url: 'https://facebook.com/duchicong'},
   ],
   positions: [
     {id: 1, name: 'Web developer'},
