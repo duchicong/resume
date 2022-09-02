@@ -30,7 +30,6 @@ const HeaderMain = () => {
     }, 3000)
   }, [user])
 
-  console.log('user ', user)
   const listFollows =
     user &&
     user?.follows.map((follow) => {

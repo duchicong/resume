@@ -11,6 +11,8 @@ import LoopIcon from '@material-ui/icons/Loop'
 import SettingsEthernetIcon from '@material-ui/icons/SettingsEthernet'
 import SettingsSystemDaydreamIcon from '@material-ui/icons/SettingsSystemDaydream'
 
+const {PUBLIC_URL} = process.env
+
 export default {
   author: 'Du Cong',
   email: 'duconggpdg@gmail.com',
@@ -18,7 +20,7 @@ export default {
     "I'm Cong, I live in Hanoi, have 2 years of experience with projects outside of Japan, like writing web apps, open-source and web platforms. Right now I'm Frontend Developer but my target is Full-stack with javascript (reactjs, vuejs).",
   phone: '0399557228',
   address: 'Hoa Phu commune - Ung Hoa district - Ha Noi city - Viet Nam',
-  picture: 'images/me.jpg',
+  picture: `${PUBLIC_URL}/images/me.jpg`,
   cover: '',
   follows: [
     {id: 1, icon: GitHubIcon, url: 'https://github.com/duchicong'},
